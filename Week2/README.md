@@ -53,7 +53,9 @@ It integrates three main components:
 
 - **RVMYTH Core** – Lightweight RISC-V CPU  
 - **PLL (avsdpll)** – Generates internal clock  
-- **10-bit DAC (avsddac)** – Converts CPU register values into analog output  
+- **10-bit DAC (avsddac)** – Converts CPU register values into analog output
+
+![Block Diagram](Images/VSDBabySoC.png)  
 
 **Objective**: Demonstrate integration of digital + analog IPs and test SoC-level functionality.
 
@@ -148,6 +150,8 @@ gtkwave pre_synth_sim.vcd
 * `reset` → Reset signal
 * `rv_to_dac[9:0]` → RISC-V output driving DAC
 * `out` → DAC output (digital in sim, represents analog)
+
+![Block Diagram](Images/pre_synth_sim.png)  
 
 ---
 
